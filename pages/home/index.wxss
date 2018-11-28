@@ -1,0 +1,139 @@
+/* pages/home/index.wxss */
+
+page {
+  background-color: #f6f6f6;
+}
+
+.search {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  height: 60rpx;
+  background-color: #fff;
+}
+
+.search .scan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+
+.search .search-input {
+  padding: 5rpx;
+  display: flex;
+  width: 80%;
+  border-radius: 10rpx;
+  align-items: center;
+}
+
+.search-input input {
+  padding: 10rpx 30rpx;
+}
+
+.search-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.widgets-img {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+swiper {
+  width: 100%;
+  height: 325rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20rpx 0;
+  background-color: #FFF;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25rpx;
+  color: #444;
+  margin: 10rpx 0;
+}
+
+.logo image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.seckill{
+  background-color: #fff;
+}
+.seckill_tit{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.theme_img{
+  width: 180rpx;
+  height: 40rpx;
+}
+.theme_img image{
+  width: 100%;
+  height: 100%;
+}
+.theme_more{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  font-size: 22rpx;
+  color: #333;
+  align-items: center;
+}
+.theme_more image{
+  width: 22rpx;
+  height: 22rpx
+}
+.seckill .seckill_lists {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+.seckill_list {
+  margin:20rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: red;
+  font-size: 24rpx;
+}
+.seckill_list image {
+  width: 170rpx;
+  height: 170rpx;
+  margin-bottom: 10rpx;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer view{
+  display: flex;
+
+}
+.footer view image{
+  min-width:240rpx;
+  max-width:375rpx;
+  min-height:202rpx;
+  max-height:292rpx;
+}
+.footer view image{
+  width: 50%;
+}

@@ -1,0 +1,62 @@
+<!--pages/home/index.wxml-->
+<view class='home'>
+<!-- 搜索框 -->
+  <view class='search'>
+    <view class="scan">
+      <image class="widgets-img" src="/image/ai3.png"  bindtap='switchCategory' />
+    </view>
+    <view class="search-input">
+      <image class="search-icon" src="/image/ath.png" />
+      <input class="serach-text" placeholder="搜索商品" bindinput="bindSearchInput" />
+    </view>
+    <view class="scan">
+      <image class="widgets-img" src="/image/ahv.png" />
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <swiper 
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}"
+    circular="{{circular}}">
+    <swiper-item wx:for="{{swipers}}" wx:key="{{index}}">
+      <image src='{{item.image}}'></image>
+    </swiper-item>
+  </swiper>
+  <!-- 主页logo -->
+  <view class='logos'>
+    <view class='logo' wx:for="{{logos}}" wx:key="{{index}}">
+      <image src='{{item.image}}'></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 限时秒杀 -->
+  <view class='seckill'>
+    <view class='seckill_tit'>
+      <view class='theme_img'>
+        <image src='/image/bej.png'></image>
+      </view>
+      <view class='theme_more'>
+        <text>更多秒杀</text>
+        <image src='/image/arrowright.png'></image>
+      </view>
+    </view>
+    <scroll-view scroll-x="true">
+      <view class='seckill_lists'>
+         <view class='seckill_list' wx:for="{{quicks}}" wx:key="{{index}}">
+           <image src='{{item.image}}'></image>
+          <text>{{item.price}}</text>
+         </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 底部广告 -->
+  <view class='footer'>
+    <block wx:for="{{pageRow}}" wx:key="{{index}}"c wx:for-item="page">
+      <view class=''>
+        <image wx:for="{{page}}" src='{{item}}'></image>
+      </view>
+    </block>  
+  </view>
+</view>
